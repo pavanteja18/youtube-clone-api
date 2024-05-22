@@ -17,7 +17,7 @@ YouTube Clone is a dynamic website that aims to replicate the core functionaliti
 
 ## Development Status 🛠️
 
-This project is currently in development. Features like video uploads, user profiles, and comments are being worked on and will be available in future updates.
+This project is currently in development. Features like video uploads, video playback, user profiles, and comments are being worked on and will be available in future updates.
 
 ## Contributions 🤝
 
