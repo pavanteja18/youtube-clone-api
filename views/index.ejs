@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <script src="https://kit.fontawesome.com/7b58461770.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bars fa-xl" style="color: #ffffff;"></i>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/512px-YouTube_Logo_2017.svg.png" width="auto" height="30px">
+        </div>
+        <input type="search" placeholder="Search" autocomplete="off" class="search">
+        <i class="fa-solid fa-user fa-xl" style="color: #ffffff;"></i>
+    </header>
+
+    <section>
+
+        <div class="container">
+            <% if(locals.data) { %>
+                <% for(let i = 0; i < 5; i++) { %>
+                    <div class="content">
+                        <div class="thumbnail">
+                            <img src= "<%= data[i].video.thumbnails[0].url %>" alt="youtube_thumbnail"  width="360px" height="202">
+                        </div>
+                        <div class="details">
+                            <img src="<%= data[i].video.author.avatar[0].url %>" alt="youtube_thumbnail" class="yt_logo" width="38px" height="38px">
+                            <div class="info">
+                                <h3><%= data[i].video.title %></h3>
+                                <p><%= data[i].video.author.title %></p>
+                                <div class="stats">
+                                    <p> <%= data[i].video.stats.views %> views</p> 
+                                    • 
+                                    <p> <%= data[i].video.publishedTimeText %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+        <div class="container">
+            <% if(locals.data) { %>
+                <% for(let i = 5; i < 10; i++) { %>
+                    <div class="content">
+                        <div class="thumbnail">
+                            <img src= "<%= data[i].video.thumbnails[0].url %>" alt="youtube_thumbnail" width="360px" height="202">
+                        </div>
+                        <div class="details">
+                            <img src="<%= data[i].video.author.avatar[0].url %>" alt="youtube_thumbnail" class="yt_logo" width="38px" height="38px">
+                            <div class="info">
+                                <h3><%= data[i].video.title %></h3>
+                                <p><%= data[i].video.author.title %></p>
+                                <div class="stats">
+                                    <p> <%= data[i].video.stats.views %> views</p> 
+                                    • 
+                                    <p> <%= data[i].video.publishedTimeText %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+        <div class="container">
+            <% if(locals.data) { %>
+                <% for(let i = 10; i < 15; i++) { %>
+                    <div class="content">
+                        <div class="thumbnail">
+                            <img src= "<%= data[i].video.thumbnails[0].url %>" alt="youtube_thumbnail" width="360px" height="202">
+                        </div>
+                        <div class="details">
+                            <img src="<%= data[i].video.author.avatar[0].url %>" alt="youtube_thumbnail" class="yt_logo" width="38px" height="38px">
+                            <div class="info">
+                                <h3><%= data[i].video.title %></h3>
+                                <p><%= data[i].video.author.title %></p>
+                                <div class="stats">
+                                    <p> <%= data[i].video.stats.views %> views</p> 
+                                    • 
+                                    <p> <%= data[i].video.publishedTimeText %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+        <div class="container">
+            <% if(locals.data) { %>
+                <% for(let i = 15; i < 20; i++) { %>
+                    <div class="content">
+                        <div class="thumbnail">
+                            <img src= "<%= data[i].video.thumbnails[0].url %>" alt="youtube_thumbnail" width="360px" height="202">
+                        </div>
+                        <div class="details">
+                            <img src="<%= data[i].video.author.avatar[0].url %>" alt="youtube_thumbnail" class="yt_logo" width="38px" height="38px">
+                            <div class="info">
+                                <h3><%= data[i].video.title %></h3>
+                                <p><%= data[i].video.author.title %></p>
+                                <div class="stats">
+                                    <p> <%= data[i].video.stats.views %> views</p> 
+                                    • 
+                                    <p> <%= data[i].video.publishedTimeText %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+        <div class="container">
+            <% if(locals.data) { %>
+                <% for(let i = 20; i < 25; i++) { %>
+                    <div class="content">
+                        <div class="thumbnail">
+                            <img src= "<%= data[i].video.thumbnails[0].url %>" alt="youtube_thumbnail" width="360px" height="202">
+                        </div>
+                        <div class="details">
+                            <img src="<%= data[i].video.author.avatar[0].url %>" alt="youtube_thumbnail" class="yt_logo" width="38px" height="38px">
+                            <div class="info">
+                                <h3><%= data[i].video.title %></h3>
+                                <p><%= data[i].video.author.title %></p>
+                                <div class="stats">
+                                    <p> <%= data[i].video.stats.views %> views</p> 
+                                    • 
+                                    <p> <%= data[i].video.publishedTimeText %></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+            <% } %>
+        </div>
+            <!-- <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="thumbnail">
+                    <img src="" alt="youtube_thumbnail">
+                </div>
+                <div class="details">
+                    <h3>Title</h3>
+                    <p>Channel</p>
+                    <p>Views count</p> • <p>Upload Time</p>
+                </div>
+            </div>
+        </div> -->
+    
+    
+    </section>
+    
+    
+</body>
+</html>
